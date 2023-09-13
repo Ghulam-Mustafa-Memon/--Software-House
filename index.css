@@ -11,16 +11,12 @@
 }
 
 /* <!-- _____________ Header _____________ --> */
-
-
-
-
 /* <!-- _____________ Deal _____________ --> */
 
 .deal-container {
     background: var(--bg-color);
     padding: 4rem 0;
-    border-bottom: 2px solid rgba(184, 184, 184, 0.084);
+    /* border-bottom: 2px solid rgba(184, 184, 184, 0.084); */
 }
 
 .deal-content {
@@ -55,6 +51,7 @@
     height: 66vh;
     filter: brightness(88%);
 }
+
 .deal-content img:nth-child(2) {
     display: none;
 }
@@ -65,14 +62,15 @@
         filter: brightness(88%);
         margin-top: 5rem;
     }
+
     .deal-content img {
-display: none;
+        display: none;
     }
+
     .deal-content img:nth-child(2) {
         display: block;
     }
 
-    
     .deal-content {
         display: flex;
         justify-content: space-evenly;
@@ -86,15 +84,16 @@ display: none;
         width: 30rem;
         font-family: var(--font-inter);
     }
+
     .deal-content img:nth-child(2) {
-     height:20rem ;
+        height: 20rem;
     }
 }
 
 @media screen and (max-width:510px) {
     .deal-content img:nth-child(2) {
-        height:15rem;
-       }
+        height: 15rem;
+    }
 
     .deal-content .text p {
         width: 25rem;
@@ -115,9 +114,10 @@ display: none;
         width: 20rem;
         font-family: var(--font-inter);
     }
+
     .deal-content img:nth-child(2) {
-        height:12rem;
-       }
+        height: 12rem;
+    }
 
 }
 
@@ -129,9 +129,10 @@ display: none;
         font-weight: 900;
         font-size: 1rem;
     }
+
     .deal-content img:nth-child(2) {
-        height:10rem;
-       }
+        height: 10rem;
+    }
 
 
     .deal-content .text p {
@@ -190,8 +191,9 @@ display: none;
 
 .practice-container {
     background: var(--bg-color);
-    padding: 4rem 3rem;
-    border-bottom: 2px solid rgba(184, 184, 184, 0.084);
+    padding: 0rem 3rem;
+    padding-top: 2rem;
+    /* border-bottom: 2px solid rgba(184, 184, 184, 0.084); */
 }
 
 .practice-container h1,
@@ -350,14 +352,13 @@ display: none;
 
 .service-container {
     background: var(--bg-color);
-    padding: 4rem;
-    border-bottom: 2px solid rgba(184, 184, 184, 0.084);
+    padding: 0rem 4rem;
 }
 
 .service-content h1 {
     font-family: var(--font-libre);
     line-height: 11rem;
-    font-size: 3rem;    
+    font-size: 3rem;
     font-weight: 700;
     width: fit-content;
 }
@@ -381,7 +382,7 @@ display: none;
 .service-content .text p {
     width: 44rem;
     font-family: var(--font-inter);
-    line-height: 2rem;
+    /* line-height: 2rem; */
 }
 
 .service-content .service {
@@ -406,7 +407,8 @@ display: none;
         align-items: center;
         flex-direction: column;
     }
-    .service-content img{
+
+    .service-content img {
         display: none;
     }
 
