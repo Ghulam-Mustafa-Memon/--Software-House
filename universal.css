@@ -23,20 +23,21 @@
 
 *::selection {
     background: var(--btn-bg-hd);
-    /* color: white; */
+    color: var(--white-color);
 }
 
 .underline {
     position: relative;
-    line-height: 3rem;
-    font-weight: 700;
+    line-height: 2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.448);
 }
 
 .underline::after {
     content: "";
     position: absolute;
     left: 0%;
-    bottom: 0%;
+    bottom: -11%;
     height: 2.5px;
     width: 40vw;
     background: var(--btn-bg-hd);

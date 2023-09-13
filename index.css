@@ -28,7 +28,7 @@
 .deal-content .text h1 {
     font-family: var(--font-libre);
     position: relative;
-    line-height: 5rem;
+    line-height: 3rem;
     font-weight: 700;
 }
 
@@ -36,7 +36,7 @@
     content: "";
     position: absolute;
     left: 0%;
-    bottom: 0%;
+    bottom: -11%;
     height: 2.5px;
     width: 40vw;
     background: var(--btn-bg-hd);
@@ -105,7 +105,7 @@
     .deal-content .text h1 {
         font-family: var(--font-libre);
         position: relative;
-        line-height: 5rem;
+        line-height: 2rem;
         font-weight: 700;
         font-size: 1.5rem;
     }
@@ -125,9 +125,9 @@
     .deal-content .text h1 {
         font-family: var(--font-libre);
         position: relative;
-        line-height: 5rem;
+        line-height: 2.5rem;
         font-weight: 900;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .deal-content img:nth-child(2) {
@@ -146,9 +146,9 @@
     .deal-content .text h1 {
         font-family: var(--font-libre);
         position: relative;
-        line-height: 5rem;
-        font-weight: 900;
-        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 800;
+        font-size: 1.25rem;
     }
 
     .deal-content .text p {
@@ -196,7 +196,12 @@
     /* border-bottom: 2px solid rgba(184, 184, 184, 0.084); */
 }
 
-.practice-container h1,
+.practice-container h1 {
+    font-family: var(--font-libre);
+    font-weight: 700;
+    line-height: 7rem;
+}
+
 .practice-container h3 {
     font-family: var(--font-libre);
     font-weight: 700;
@@ -295,9 +300,11 @@
 
     .practice-container h1 {
         font-family: var(--font-libre);
-        font-weight: 900;
-        line-height: 2rem;
-        font-size: 1.25rem;
+        font-weight: 800;
+        margin: auto;
+        margin-top: 1.75rem;
+        line-height: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .practice-container h3 {
@@ -305,12 +312,16 @@
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:340px) {
 
     .practice-content .my-card {
         padding: 2rem;
         height: 28.5rem;
         width: 18rem;
+    }
+
+    .practice-container h1 {
+        font-size: 1.25rem;
     }
 
     .practice-container h3 {
@@ -330,14 +341,14 @@
         width: 16rem;
     }
 
-    .practice-container h1 {
+    /* .practice-container h1 {
         font-family: var(--font-libre);
         font-weight: 900;
         line-height: 2rem;
         font-size: 1.25rem;
         margin: 0%;
         padding: 0%;
-    }
+    } */
 
     .practice-container h3 {
         line-height: 2rem;
@@ -480,9 +491,10 @@
 @media screen and (max-width:390px) {
     .service-content h1 {
         font-family: var(--font-libre);
-        line-height: 5rem;
-        font-size: 1.25rem;
-        font-weight: 900;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: 800;
         width: fit-content;
     }
 
@@ -493,20 +505,20 @@
 }
 
 @media screen and (max-width:330px) {
-    .service-content h1 {
+    /* .service-content h1 {
         font-family: var(--font-libre);
         line-height: 5rem;
         font-size: 1rem;
         font-weight: 900;
         width: fit-content;
-    }
+    } */
 
     .service-content img {
         height: 62vh;
     }
 
     .service-content .text p {
-        width: 12rem;
+        width: 14rem;
         font-family: var(--font-inter);
     }
 }
