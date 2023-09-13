@@ -1,0 +1,146 @@
+:root {
+    --btn-bg-hd: #CDAD7D;
+    --white-color: #EEEAD6;
+    --bg-color: #F4F1EC;
+    --black-color: #222344;
+    --card-color1: #EAD1AE;
+    --card-color2: #DBBF94;
+    --card-color3: #CDAD7D;
+    --font-libre: 'Libre Baskerville';
+    --font-inter: 'Inter';
+}
+
+/* <!-- _____________ Navbar _____________ --> */
+
+
+
+
+/* <!-- _____________ Footer _____________ --> */
+
+.footer-container {
+    background: var(--bg-color);
+    padding-top: 2rem;
+}
+
+.footer-content {
+    padding: 0rem 2rem;
+    font-family: var(--font-inter);
+    letter-spacing: .03rem;
+}
+
+.footer-content p {
+    color: var(--black-color);
+}
+
+.footer-content .contact a {
+    color: var(--black-color);
+    text-decoration: none;
+    transition: .5s;
+    margin: .5rem 0;
+}
+
+.footer-content .contact a:hover {
+    padding-left: 1rem;
+    color: var(--black-color);
+}
+
+.footer-content h2 {
+    font-family: var(--font-libre);
+}
+
+.footer-items1 {}
+
+.footer-items2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 33px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 33px;
+}
+
+.contact i {
+    color: var(--btn-bg-hd);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.hours {
+    padding-top: 33px;
+}
+
+.hours div {}
+
+.hours div span {
+    color: var(--btn-bg-hd);
+}
+
+.follow-us {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.follow-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+}
+
+.follow-icons {
+    margin-left: 33px;
+}
+
+.follow-icons i {
+    border: .5px solid #CDAD7D;
+    border-radius: 100%;
+    font-size: 1.35rem;
+    margin: 0% 5px;
+    padding: 8px;
+    color: var(--btn-bg-hd);
+    transition: .6s ease all;
+}
+
+.follow-icons i:hover {
+    box-shadow: 0 0 1rem var(--btn-bg-hd);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.follow-us p {
+    /* width: 22rem; */
+}
+
+.footer-logo {
+    margin-top: 2rem;
+}
+
+.footer-logo img {
+    height: 18vh;
+}
+
+@media screen and (max-width:450px) {
+    .follow-heading {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: .5rem;
+    }
+
+    .follow-icons {
+        margin-left: 0px;
+        padding: 1rem 0;
+    }
+}

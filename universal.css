@@ -1,0 +1,68 @@
+:root {
+    --btn-bg-hd: #CDAD7D;
+    --white-color: #EEEAD6;
+    --bg-color: #F4F1EC;
+    --black-color: #222344;
+    --card-color1: #EAD1AE;
+    --card-color2: #DBBF94;
+    --card-color3: #CDAD7D;
+    --font-libre: 'Libre Baskerville';
+    --font-inter: 'Inter';
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background: var(--btn-bg-hd);
+    /* color: white; */
+}
+
+.underline {
+    position: relative;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 2.5px;
+    width: 40vw;
+    background: var(--btn-bg-hd);
+}
+
+.btn-mine {
+    background-color: var(--btn-bg-hd);
+    color: var(--black-color);
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: var(--font-inter);
+    transition: .2s ease-in-out;
+}
+
+.btn-mine:hover {
+    background: var(--card-color1);
+}
+
+
+@media (min-width: 768px) {
+    .btn-mine {
+        align-items: flex-start;
+        /* Align content to the left on desktop */
+        text-align: center;
+        /* Center-align the text on desktop */
+    }
+}

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --btn-bg-hd: #CDAD7D;
+  --white-color: #EEEAD6;
+  --bg-color: #F4F1EC;
+  --black-color: #222344;
+  --card-color1: #EAD1AE;
+  --card-color2: #DBBF94;
+  --card-color3: #CDAD7D;
+  --font-libre: "Libre Baskerville";
+  --font-inter: "Inter";
+}
+
+.bg-img {
+  background: url(./images/bg\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.containerHome {
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.home-main h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  font-family: var(--font-libre) !important;
+  color: var(--btn-bg-hd);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.home-main p {
+  color: var(--white-color);
+  font-family: var(--font-inter);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  letter-spacing: 0.03rem;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+.home-main button {
+  background-color: var(--btn-bg-hd);
+  color: var(--black-color);
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: var(--font-inter);
+  transition: 0.2s ease-in-out;
+}
+.home-main button:hover {
+  background-color: var(--card-color2);
+}
+@media (min-width: 768px) {
+  .home-main {
+    align-items: flex-start;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-main h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .home-main p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-main h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+  }
+}
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  outline: none;
+  font-family: "Jost", sans-serif;
+}
+
+.drop-down {
+  background-color: #222344;
+  border: 1px solid rgba(255, 255, 255, 0.137);
+}
+
+.drop-down a {
+  color: black;
+}
+
+nav button {
+  display: none;
+}
+nav button i {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.712);
+  background-color: #414456;
+  padding: 0.3rem;
+}
+
+@media screen and (max-width: 992px) {
+  nav button {
+    display: block;
+  }
+}
+.nav-item a {
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+  .navbar-light .navbar-nav {
+    border-top: 1px solid #EEEEEE;
+    background-color: #222344;
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+  nav a img {
+    width: 150px;
+  }
+}
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+  height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+  top: -100px;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=nav.css.map */
